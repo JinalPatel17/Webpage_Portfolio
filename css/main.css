@@ -132,6 +132,11 @@ h2, .h02 {
 	font-family: 'Candara light', 'Times New Roman', Times, serif;
 	color: lightseagreen;
 }
+h2.ops{
+	font-size: 30px;
+	font-family: 'Candara light','Times New Roman',Times ,serif;
+	color: rgb(247, 71, 58);
+}
 h3, .h03 {
 	font-size: 2rem;
 	line-height: 1.5;
@@ -1096,7 +1101,7 @@ header {
 header .row {
 	position: relative;
 	min-height: 66px;
-	margin-left: 5px;
+	/* margin-left: 5px; */
 }
 header .top-bar {
 	display: block;
@@ -1104,7 +1109,7 @@ header .top-bar {
 	min-width: 220px;
 	min-height: 66px;
 	position: absolute;
-	left: 50px;
+	left: 90px;
 	top: 0;
 }
 
