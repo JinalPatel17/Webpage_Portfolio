@@ -1810,8 +1810,106 @@ header .logo a:hover{
  *
  * ------------------------------------------------------------------- 
  */
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 300px;
+    max-width: 600px;
+    width:100%;
+    display: flex;
+    /*flex-wrap: wrap;*/
+}
+
+.outer-container{
+    position: relative;
+    padding: 4rem;
+    text-align: center;
+    overflow: hidden;
+}
+  
+.card-custom {
+    height: 280px;
+    width: 200px;
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    box-shadow: -0.5rem 0 1.5rem black;
+    transition: 0.4s ease-out;
+    position: absolute;
+    top: 0;
+}
+
+.card-1{
+    left:0%;
+}
+
+.card-1:hover  {
+    transform:translate(-10px,-20px);
+}
+
+.card-1:hover  ~ .card-2 {
+    left:180px;
+}
+
+.card-1:hover  ~ .card-3 {
+    left:max(200px,calc( (100% - 160px) * (2/3) ));
+}
+
+.card-1:hover  ~ .card-4 {
+    left:max(220px,calc(100% - 180px));
+}
+
+.card-2{
+    left:calc( (100% - 200px) * (1/3) );
+}
+
+.card-2:hover  {
+    transform:translate(-10px,-20px);
+}
+  
+.card-2:hover  ~ .card-3 {
+    left:max(calc((100% - 200px) * (1/3) + 180px),calc( (100% - 160px) * (2/3) ));
+}
+
+.card-2:hover  ~ .card-4 {
+    left:max(calc((100% - 200px) * (1/3) + 200px), calc(100% - 180px));
+}
+
+.card-3{
+    left:calc( (100% - 200px) * (2/3) );
+}
+
+.card-3:hover  {
+    transform:translate(-10px,-20px);
+}
+
+.card-3:hover  ~ .card-4 {
+    left:max( (100% - 200px) * (2/3) + 180px);
+}
+
+.card-4{
+    left:calc(100% - 200px);
+}
+
+.card-4:hover  {
+    transform:translate(-10px,-20px);
+}
+
+#PortfolioStyleDiv{
+	display: flex;
+	justify-content: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: middle;
+	letter-spacing: .1rem;
+	position: relative;
+	font-weight: bold;
+}
+
+  
 #portfolio {
-	background: #FFFFFF;
+	background: #504e4e;
 	padding-top: 12rem;
 	padding-bottom: 12rem;
 }
@@ -1842,8 +1940,12 @@ header .logo a:hover{
 	-ms-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
-
-#portfolio .folio-item-table {
+/* #portfolio +h1{
+	text-transform: uppercase;
+	font-family: "poppins-regular", sans-serif; 
+	font-size: 1.2rem;
+	letter-spacing: .1rem;*/
+/*#portfolio .folio-item-table {
 	display: table;
 	width: 100%;
 	height: 100%;
@@ -1886,14 +1988,14 @@ header .logo a:hover{
 	-webkit-transform: scale(1.05);
 	-ms-transform: scale(1.05);
 	transform: scale(1.05);
-}
+} */
 
 /**
  * responsive:
  * portfolio
  * ------------------------------------------------------------------- 
  */
-@media only screen and (max-width:1024px) {
+/* @media only screen and (max-width:1024px) {
 	#portfolio .folio-title {
 		font-size: 3.1rem;
 	}
@@ -1907,86 +2009,7 @@ header .logo a:hover{
 	#portfolio .folio-title {
 		font-size: 2.2rem;
 	}
-}
-
-/**
- * Popup Modal - (_layout.scss)
- * ------------------------------------------------------------------
- */
-.popup-modal {
-	max-width: 550px;
-	background: #FFFFFF;
-	position: relative;
-	margin: 0 auto;
-}
-.popup-modal .media {
-	position: relative;
-}
-.popup-modal img {
-	vertical-align: bottom;
-}
-.popup-modal .description-box {
-	padding: 1.8rem 3.6rem 3rem;
-}
-.popup-modal .description-box h4 {
-	font-family: "poppins-bold", sans-serif;
-	font-size: 1.5rem;
-	line-height: 2.4rem;
-	margin-bottom: .6rem;
-}
-.popup-modal .description-box p {
-	font-family: "poppins-regular", sans-serif;
-	font-size: 1.4rem;
-	line-height: 2.4rem;
-	margin-bottom: 12px;
-}
-.popup-modal .categories {
-	font-family: "poppins-bold", sans-serif;
-	font-size: 1.1rem;
-	line-height: 1.8rem;
-	text-transform: uppercase;
-	letter-spacing: .1rem;
-	display: block;
-	text-align: left;
-	color: rgba(0, 0, 0, 0.5);
-}
-.popup-modal .link-box {
-	width: 100%;
-	overflow: hidden;
-	background: #000000;
-}
-.popup-modal .link-box a {
-	font-family: "poppins-bold", sans-serif;
-	font-size: 1.2rem;
-	line-height: 6rem;
-	color: #FFFFFF;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	cursor: pointer;
-	display: block;
-	text-align: center;
-	float: left;
-	width: 50%;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-.popup-modal .link-box a:first-child {
-	border-right: 1px solid rgba(200, 200, 200, 0.1);
-}
-.popup-modal .link-box a:hover {
-	background: #cc005f;
-	border: none;
-}
-@media only screen and (max-width:600px) {
-	.popup-modal {
-		width: auto;
-		margin: 0 20px;
-	}
-}
-
+} */
 /**
  * transition effect for modal popup - (_layout.scss)
  * ------------------------------------------------------------------ 
