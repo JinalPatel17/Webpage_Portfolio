@@ -1,9 +1,7 @@
 /**
  * =================================================================== 
  *
- *  Kards v1.0 Main Stylesheet
- *  url: styleshout.com
- *  03-01-2016
+ *
  *  ------------------------------------------------------------------
  *  TOC:
  *  01. webfonts and iconfonts
@@ -1536,9 +1534,9 @@ header .logo a:hover{
   }
   
   /* Add some padding inside the card container */
-  /* .container {
+  .container {
 	padding: 2px 16px;
-  } */
+  }
 /** 
  * ===================================================================
  * 11. about - (_layout.scss)
@@ -1679,6 +1677,7 @@ header .logo a:hover{
 #resume {
 	padding-top: 12rem;
 	padding-bottom: 12rem;
+	
 }
 
 #resume .resume-header {
@@ -1873,7 +1872,10 @@ header .logo a:hover{
     position: absolute;
     top: 0;
 }
-
+.card-4{
+	background: url(../images/Cards1.JPG) no-repeat center center;
+	/* background-clip: content-box; */
+}
 .card-1{
     left:0%;
 }
@@ -2329,10 +2331,27 @@ header .logo a:hover{
  * ------------------------------------------------------------------- 
  */
 #contact {
-	background: #151515;
+	/* background: #151515; */
+	background: linear-gradient(90deg, #ee6952, #8924e7, #2ce654, #ebd835);
+  	background-size: 400% 400%;
+  	animation: gradient 15s ease-in-out infinite;
 	padding-top: 12rem;
 	padding-bottom: 7.2rem;
 }
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+*{
+	  box-sizing: border-box;
+}  
 #contact .section-intro h1 {
 	color: white;
 }
