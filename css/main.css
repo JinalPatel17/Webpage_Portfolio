@@ -1874,7 +1874,9 @@ header .logo a:hover{
 }
 .card-4{
 	background: url(../images/Cards1.JPG) no-repeat center center;
-	/* background-clip: content-box; */
+}
+.card-1:hover{
+	background-image: url(../images/Cards1.jpg) no-repeat center center;
 }
 .card-1{
     left:0%;
