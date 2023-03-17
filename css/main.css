@@ -1872,11 +1872,20 @@ header .logo a:hover{
     position: absolute;
     top: 0;
 }
-.card-4{
+/* .card-4{
 	background: url(../images/Cards1.JPG) no-repeat center center;
+}*/
+.card-4{
+	background: url(../images/Cards1.jpg) no-repeat center center;
+}
+.card-3{
+	background: url(../images/cards3.jpg) no-repeat center center;
+}
+.card-2{
+	background: url(../images/cards4.jpg) no-repeat center center;
 }
 .card-1{
-	background: url(../images/Cards1.jpg) no-repeat center center;
+	background: url(../images/cards5.jpg) no-repeat center center;
 }
 .card-1{
     left:0%;
@@ -2334,7 +2343,7 @@ header .logo a:hover{
  */
 #contact {
 	/* background: #151515; */
-	background: linear-gradient(90deg, #ee6952, #8924e7, #2ce654, #ebd835);
+	background: linear-gradient(90deg, #ee6952, #8924e7, #61f7d1, #ebd835);
   	background-size: 400% 400%;
   	animation: gradient 15s ease-in-out infinite;
 	padding-top: 12rem;
