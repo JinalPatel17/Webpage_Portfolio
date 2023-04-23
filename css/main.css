@@ -1876,16 +1876,16 @@ header .logo a:hover{
 	background: url(../images/Cards1.JPG) no-repeat center center;
 }*/
 .card-4{
-	background: url(../images/Cards1.jpg) no-repeat center center;
+	background: url() no-repeat center center;
 }
 .card-3{
-	background: url(../images/cards3.jpg) no-repeat center center;
+	background: url() no-repeat center center;
 }
 .card-2{
-	background: url(../images/cards4.jpg) no-repeat center center;
+	background: url() no-repeat center center;
 }
 .card-1{
-	background: url(../images/cards5.jpg) no-repeat center center;
+	background: url() no-repeat center center;
 }
 .card-1{
     left:0%;
