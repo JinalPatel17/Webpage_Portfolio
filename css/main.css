@@ -2705,5 +2705,12 @@ footer .copyright span:last-child::after {
 #go-top a:hover {
 	background: #000000;
 }
+#Font_codex{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Bruno Ace SC', cursive;
+	color: red;
+}
 
 /*# sourceMappingURL=main.css.map */
