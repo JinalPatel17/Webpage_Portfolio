@@ -1437,7 +1437,22 @@ header .logo a:hover{
 .intro-social li a:hover, .intro-social li a:focus {
 	color: #D39800;
 }
+/*Copied from GPT trial*/
+@media screen and (max-width: 767px) {
+  /* Mobile devices */
+#intro {
+    background-attachment: scroll;
+    background-position: center center;
+  }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Tablet devices */
+#intro {
+    background-attachment: scroll;
+    background-position: center center;
+  }
+}/*The copy ended*/
 /**
  * responsive:
  * Intro
