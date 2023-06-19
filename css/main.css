@@ -159,10 +159,10 @@
      margin: 0;
  }
  p.lead {
-     font-family: 'times new roman',"lora-regular", serif;
+     font-family: 'Joan', serif;
      font-size: 2rem;
      line-height: 1.8;
-     color: #888888;
+     color: #a5a5a5;
  }
  @media only screen and (max-width:768px) {
      p.lead {
@@ -961,7 +961,7 @@
      left: 0;
      top: -3rem;
      font-family: "poppins-bold", sans-serif;
-     color: #313131;
+     color: #a8a6a6;
      text-transform: uppercase;
      letter-spacing: .2rem;
      font-size: 1.5rem;
@@ -978,7 +978,7 @@
      top: -3.6rem;
      display: block;
      font-family: "poppins-regular", sans-serif;
-     color: white;
+     color: #db7000;
      font-size: 1.1rem;
      line-height: 1;
      background: #313131;
@@ -1057,6 +1057,13 @@
  }
  #intro_edition2{
   font-family: 'Joan', serif;
+ }
+ #introduce_edition1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #FFFFFF;
+ }
+ #introduce_edition2{
+  color: #9B7000;
  }
  /**
   * responsive:
@@ -1317,18 +1324,18 @@
   * ------------------------------------------------------------------- 
   */
  #intro {
-     background: #151515 url(../images/279A1523.JPG) no-repeat center bottom;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     background-size: cover;
-     background-attachment: fixed;
-     object-fit: inherit;
-     width: 100%;
-     height: 100%;
-     min-height: 480px;
-     display: table;
-     position: relative;
-     text-align: center;
+      background: #151515 url(../images/279A1523.JPG) no-repeat center bottom;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      background-attachment: fixed;
+      object-fit: inherit;
+      width: 100%;
+      height: 100%;
+      min-height: 480px;
+      display: table;
+      position: relative;
+      text-align: center;
  }
  .intro-overlay {
      position: absolute;
@@ -3161,7 +3168,7 @@
  }
  .about-content .info-list li strong {
      font-family: "poppins-bold", sans-serif;
-     color: #161212;
+     color: #e0e0e0;
      text-transform: uppercase;
      letter-spacing: .2rem;
      font-size: 1.5rem;
@@ -3187,7 +3194,15 @@
  .button-section [class*="col-"] .button:first-child {
      margin-right: 4rem;
  }
- 
+ #strong_edition1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ #resume_edition1{
+  font-family: 'Joan', serif;
+ }
+ #resume_edition2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
  /**
   * responsive:
   * about
@@ -4452,7 +4467,8 @@
      align-items: center;
      justify-content: center;
      font-family: 'Moirai One', cursive;
-     color: red;
+     color: #e65733;
+     
  }
  
  /*# sourceMappingURL=main.css.map */
