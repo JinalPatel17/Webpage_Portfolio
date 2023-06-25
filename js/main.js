@@ -115,7 +115,7 @@
 	});
 	// video editing
 	var video = document.getElementById('bg-video');
-	video.playbackRate = 3;
+	video.playbackRate = 4;
 
 
 	/*----------------------------------------------------*/
