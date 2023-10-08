@@ -690,11 +690,15 @@
 }
 button.bubbly-button {
 cursor: pointer;
-display: inline-block;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+display: flex;
+justify-content: center;
+align-items: center;
 width: 100%;
 background: #9B7000;
 padding: 15px;
-font-family: inherit;
+/* font-family: inherit; */
 font-size: 16px;
 border: 0;
 border-radius: 5px;
