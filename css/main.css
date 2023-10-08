@@ -1,7 +1,7 @@
 /**
  * =================================================================== 
- *
- *
+ *  Jinal Patel
+ *  MIT licencse 2.0 (2023)
  *  ------------------------------------------------------------------
  *  TOC:
  *  01. webfonts and iconfonts
@@ -357,14 +357,14 @@
   * Spacing - (_document-setup.scss)  
   * -------------------------------------------------------------------
   */
- button, .button {
-     margin-bottom: 1.2;
- }
+ /* button, .button {
+     margin-bottom: 1.2px;
+ } */
  fieldset {
      margin-bottom: 1.5rem;
  }
- input,
- textarea,
+ /* there is few of them original which is set in comments after the command so 
+ be careful from here */
  select,
  pre,
  blockquote,
@@ -375,11 +375,13 @@
  ol,
  dl,
  form,
- .fluid-video-wrapper,
- .ss-custom-select {
+ .fluid-video-wrapper {
      margin-bottom: 3rem;
  }
- 
+ /* input,
+ textarea,,
+ .ss-custom-select */
+
  /**
   * floated image - (_document-setup.scss)  
   * -------------------------------------------------------------------
@@ -508,13 +510,14 @@
  
  /** 
   * ===================================================================
-  * 05. forms - (_forms.scss)
+  * 05. forms - (_forms.scss) - The original
   *
   * ------------------------------------------------------------------- 
   */
- fieldset {
+ /* fieldset {
      border: none;
- }
+ } */
+ /* This is original 
  input[type="email"],
  input[type="number"],
  input[type="search"],
@@ -542,8 +545,8 @@
      -webkit-transition: all 0.3s ease-in-out;
      -ms-transition: all 0.3s ease-in-out;
      transition: all 0.3s ease-in-out;
- }
- .ss-custom-select {
+ } */
+ /* .ss-custom-select {
      position: relative;
      padding: 0;
  }
@@ -581,13 +584,13 @@
      text-align: center;
      pointer-events: none;
      color: #252525;
- }
+ } */
  
  /* IE9 and below */
- .oldie .ss-custom-select::after {
+ /* .oldie .ss-custom-select::after {
      display: none;
- }
- textarea {
+ } */
+ /* textarea {
      min-height: 25rem;
  }
  input[type="email"]:focus,
@@ -622,28 +625,195 @@
      margin: 0;
      position: relative;
      top: .15rem;
- }
+ } */
  
  /**
   * Style Placeholder Text  
   * -
   */
- ::-webkit-input-placeholder {
+ /* ::-webkit-input-placeholder {
      color: #a1a1a1;
  }
  :-moz-placeholder {
-     color: #a1a1a1;  /* Firefox 18- */
+     color: #a1a1a1; 
  }
  ::-moz-placeholder {
-     color: #a1a1a1;  /* Firefox 19+ */
+     color: #a1a1a1;   Firefox 19+ 
  }
  :-ms-input-placeholder {
      color: #a1a1a1;
  }
  .placeholder {
      color: #a1a1a1 !important;
- }
- 
+ } */
+ /** 
+  * ===================================================================
+  * 05. forms - (_forms.scss) Jinx Edition
+  *
+  * ------------------------------------------------------------------- 
+*/
+.container_contact, .contact-form {
+    font-family: 'Mulish', sans-serif;
+    color: rgb(243, 234, 234);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.col-twelve.col_form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.container_jinx{
+  /* background-color: #393e467d; */
+  padding: 20px 40px;
+  /* border-radius: 5px; */
+
+}
+
+.container_jinx h1 {
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
+.container_jinx a {
+  text-decoration: none;
+  color: #9B7000;
+}
+button.bubbly-button {
+cursor: pointer;
+display: inline-block;
+width: 100%;
+background: #9B7000;
+padding: 15px;
+font-family: inherit;
+font-size: 16px;
+border: 0;
+border-radius: 5px;
+}
+button.bubbly-button {
+-webkit-appearance: none;
+appearance: none;
+position: relative;
+transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+box-shadow: 0 2px 25px rgb(0, 38, 255);
+}
+button.bubbly-button:focus {
+outline: 0;
+}
+button.bubbly-button:before, button.bubbly-button:after {
+position: absolute;
+content: "";
+display: block;
+width: 140%;
+height: 100%;
+left: -20%;
+z-index: -1000;
+transition: all ease-in-out 0.5s;
+background-repeat: no-repeat;
+}
+button.bubbly-button:before {
+display: none;
+top: -75%;
+background-image: radial-gradient(circle, #00daf7 20%, transparent 20%), radial-gradient(circle, transparent 20%, #996902 20%, transparent 30%), radial-gradient(circle, #996902 20%, transparent 20%), radial-gradient(circle, #996902 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+button.bubbly-button:after {
+display: none;
+bottom: -75%;
+background-image: radial-gradient(circle, #0051ff 20%, transparent 20%), radial-gradient(circle, #996902 20%, transparent 20%), radial-gradient(circle, transparent 10%, #996902 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+button.bubbly-button:active {
+transform: scale(0.9);
+background-color: #00daf7;
+box-shadow: 0 2px 25px rgba(0, 38, 255, 0.2);
+}
+button.bubbly-button.animate:before {
+display: block;
+animation: topBubbles ease-in-out 0.75s forwards;
+}
+button.bubbly-button.animate:after {
+display: block;
+animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+@keyframes topBubbles {
+0% {
+  background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+}
+50% {
+  background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+}
+100% {
+  background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+  background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+}
+}
+@keyframes bottomBubbles {
+0% {
+  background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+}
+50% {
+  background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+}
+100% {
+  background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+  background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+}
+}
+.text{
+  margin-top: 30px;
+}
+.form-control{
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+
+.form-control input{
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.form-control input:focus,
+.form-control input:valid{
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+}
+
+.form-control label span{
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span, .form-control input:valid + label  span {
+  color: lightblue;
+  transform: translateY(-30px);
+}
  /** 
   * ===================================================================
   * 06. buttons - (_button-essentials.scss)
@@ -653,7 +823,6 @@
  .button,
  a.button,
  button,
- input[type="submit"],
  input[type="reset"],
  input[type="button"] {
      display: inline-block;
@@ -681,12 +850,10 @@
  .button:hover,
  a.button:hover,
  button:hover,
- input[type="submit"]:hover,
  input[type="reset"]:hover,
  input[type="button"]:hover,
  .button:focus,
  button:focus,
- input[type="submit"]:focus,
  input[type="reset"]:focus,
  input[type="button"]:focus {
      background: #bebebe;
@@ -696,7 +863,6 @@
  .button.button-primary,
  a.button.button-primary,
  button.button-primary,
- input[type="submit"].button-primary,
  input[type="reset"].button-primary,
  input[type="button"].button-primary {
      background: #313131;
@@ -705,16 +871,15 @@
  .button.button-primary:hover,
  a.button.button-primary:hover,
  button.button-primary:hover,
- input[type="submit"].button-primary:hover,
  input[type="reset"].button-primary:hover,
  input[type="button"].button-primary:hover,
  .button.button-primary:focus,
  button.button-primary:focus,
- input[type="submit"].button-primary:focus,
  input[type="reset"].button-primary:focus,
  input[type="button"].button-primary:focus {
      background: #1f1f1f;
  }
+ 
  button.full-width, .button.full-width {
      width: 100%;
      margin-right: 0;
@@ -1029,6 +1194,7 @@
  }
  .grey-section p.lead {
      color: #7d7d7d;
+     
  }
  .section-intro {
      max-width: 700px;
@@ -1389,7 +1555,7 @@
  .intro-content .intro-position span {
      display: inline-block;
  }
- .intro-content .intro-position span::after {
+ .intro-content .intro-position span:nth-child(4)::after {
      content: "|";
      text-align: center;
      display: inline-block;
@@ -4130,8 +4296,8 @@
      color: rgba(255, 255, 255, 0.7);
  }
  
- /* contact form */
- .contact-form {
+ /* contact form The original*/
+ /* .contact-form {
      max-width: 740px;
  }
  
@@ -4139,10 +4305,10 @@
      color: rgba(255, 255, 255, 0.3);
  }
  .contact-form :-moz-placeholder {
-     color: rgba(255, 255, 255, 0.3);  /* Firefox 18- */
+     color: rgba(255, 255, 255, 0.3);  
  }
  .contact-form ::-moz-placeholder {
-     color: rgba(255, 255, 255, 0.3);  /* Firefox 19+ */
+     color: rgba(255, 255, 255, 0.3);  
  }
  .contact-form :-ms-input-placeholder {
      color: rgba(255, 255, 255, 0.3);
@@ -4233,7 +4399,7 @@
  }
  #contact button.submitform:hover, #contact button.submitform:focus {
      background: #040f74;
- }
+ } */
  #message-warning, #message-success {
      display: none;
      background: #0d0d0d;
@@ -4399,10 +4565,10 @@
      padding: 0 1rem 0 1.2rem;
      color: rgba(255, 255, 255, 0.1);
  }
- footer .copyright span:last-child::after {
+ footer .copyright::after {
      display: none;
  }
- 
+ /* span:last-child on right above before :: */
  /**
   * responsive:
   * footer
