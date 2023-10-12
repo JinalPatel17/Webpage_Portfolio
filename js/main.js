@@ -220,52 +220,93 @@
 	------------------------------------------------------ */
 
 	/* local validation */
-	$('#contactForm').validate({
+	// $('#contactForm').validate({
 
 		/* submit via ajax */
-		submitHandler: function(form) {
+	// 	submitHandler: function(form) {
 
-			var sLoader = $('#submit-loader');
+	// 		var sLoader = $('#submit-loader');
 
-			$.ajax({      	
+	// 		$.ajax({      	
 
-		      type: "POST",
-		    //   url: "inc/sendEmail.php",
-		      data: $(form).serialize(),
-		      beforeSend: function() { 
+	// 	      type: "POST",
+	// 	    //   url: "inc/sendEmail.php",
+	// 	      data: $(form).serialize(),
+	// 	      beforeSend: function() { 
 
-		      	sLoader.fadeIn(); 
+	// 	      	sLoader.fadeIn(); 
 
-		      },
-		      success: function(msg) {
+	// 	      },
+	// 	      success: function(msg) {
 
-	            // Message was sent
-	            if (msg == 'OK') {
-	            	sLoader.fadeOut(); 
-	               $('#message-warning').hide();
-	               $('#contactForm').fadeOut();
-	               $('#message-success').fadeIn();   
-	            }
-	            // There was an error
-	            else {
-	            	sLoader.fadeOut(); 
-	               $('#message-warning').html(msg);
-		            $('#message-warning').fadeIn();
-	            }
+	//             // Message was sent
+	//             if (msg == 'OK') {
+	//             	sLoader.fadeOut(); 
+	//                $('#message-warning').hide();
+	//                $('#contactForm').fadeOut();
+	//                $('#message-success').fadeIn();   
+	//             }
+	//             // There was an error
+	//             else {
+	//             	sLoader.fadeOut(); 
+	//                $('#message-warning').html(msg);
+	// 	            $('#message-warning').fadeIn();
+	//             }
 
-		      },
-		      error: function() {
+	// 	      },
+	// 	      error: function() {
 
-		      	sLoader.fadeOut(); 
-		      	$('#message-warning').html("Something went wrong. Please try again.");
-		         $('#message-warning').fadeIn();
+	// 	      	sLoader.fadeOut(); 
+	// 	      	$('#message-warning').html("Something went wrong. Please try again.");
+	// 	         $('#message-warning').fadeIn();
 
-		      }
+	// 	      }
 
-	      });     		
-  		}
+	//       });     		
+  	// 	}
 
-	});
+	// });
+// this is part of google form 
+document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+	event.preventDefault(); // Prevent the form from submitting traditionally
+  
+	// Collect form data
+	const form = new FormData(event.target);
+  
+	// Submit data to Google Forms (replace FORM_ACTION_URL)
+	fetch('https://docs.google.com/forms/d/e/1FAIpQLSfS4sMYPK6rZV82DfW-2wQafK6M-UgTUQ410HEgNVgZqn5PfQ/formResponse', {
+	  method: 'POST',
+	  body: form,
+	})
+	  .then(response => {
+		// Handle the response as needed (e.g., show a thank you message)
+		console.log('Feedback submitted successfully');
+		// Add your custom success logic here
+  
+		// Clear the form fields
+		event.target.reset();
+  
+		// Message was sent
+		if (response.ok) {
+		  $('#message-warning').hide();
+		  $('#contactForm').fadeOut();
+		  $('#message-success').fadeIn();
+		} else {
+		  // There was an error
+		  response.text().then(msg => {
+			$('#message-warning').html(msg);
+			$('#message-warning').fadeIn();
+		  });
+		}
+	  })
+	  .catch(error => {
+		console.error('Error submitting feedback:', error);
+		// Add your custom error handling here
+		$('#message-warning').html("Something went wrong. Please try again.");
+		$('#message-warning').fadeIn();
+	  });
+  });
+// the following part is for form control
 const labels = document.querySelectorAll(".form-control label");
 	labels.forEach((label) => {
 		label.innerHTML = label.innerText
@@ -274,6 +315,23 @@ const labels = document.querySelectorAll(".form-control label");
 		`<span style="transition-delay:${idx * 50}ms">${letter}</span>` )
 		.join("");
 });
+// now for website visit Counter
+// Function to increment the visit count
+// Function to increment the visit count
+// function incrementVisitCount() {
+// 	let visitCount = localStorage.getItem('visitCount');
+  
+// 	if (visitCount) {
+// 	  visitCount = parseInt(visitCount);
+// 	  visitCount++;
+// 	} else {
+// 	  visitCount = 1;
+// 	}
+  
+// 	localStorage.setItem('visitCount', visitCount);
+  
+// 	document.getElementById('visitCount').textContent = `Number of visits: ${visitCount}`;
+//   }
 
  	/*----------------------------------------------------- */
   	/* Back to top

@@ -51,8 +51,23 @@
 
 </head>
 
-<body id="top">
-
+<body id="top" onload="incrementVisitCount()">
+<script>
+function incrementVisitCount() {
+	let visitCount = localStorage.getItem('visitCount');
+  
+	if (visitCount) {
+	  visitCount = parseInt(visitCount);
+	  visitCount++;
+	} else {
+	  visitCount = 1;
+	}
+  
+	localStorage.setItem('visitCount', visitCount);
+  
+	document.getElementById('visitCount').textContent = `Number of visits: ${visitCount}`;
+  }
+  </script>
 	<!-- header 
    ================================================== -->
    <header>   	
@@ -109,9 +124,9 @@
 		<li><a href="https://github.com/JinalPatel17" target="_blank"><i class="fa fa-github"></i></a></li>
 		<li><a href="https://www.linkedin.com/in/jinal-patel-22359715a/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 		<li><a href="https://steamcommunity.com/profiles/76561198412021539/" target="_blank"><i class="fa fa-steam"></i></a></li>
-      </ul> <!-- /intro-social -->      	
-
+      </ul> <!-- /intro-social --> 
    </section> <!-- /intro -->
+   <!-- <p id="visitCount">Loading visit count...</p> -->
    <!-- -->
 
 
@@ -656,22 +671,22 @@
    	<div class="contact-form">
    		<div class="col-twelve col_form">
 			<div class="container_jinx">
-				<h1>Please fill this!!</h1>
-				<form>
+				<form id="feedbackForm" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSfS4sMYPK6rZV82DfW-2wQafK6M-UgTUQ410HEgNVgZqn5PfQ/formResponse">
+					<!-- event.preventDefault(); -->
 					<div class="form-control">
-						<input type="text" required />
+						<input type="text" id="name" name="entry.1141342697" required />
 						<label>Your name </label>
 					</div>
 					<div class="form-control">
-						<input type="text" required />
+						<input type="text" id="email" name="entry.1726958948" required />
 						<label>Your email </label>
 					</div>
 					<div class="form-control">
-						<input type="text" required />
+						<input type="text" id="subject" name="entry.1104091493" required />
 						<label>Subject</label>
 					</div>
 					<div class="form-control">
-						<input type="text" required/>
+						<textarea type="text"cols="8" rows="4" id="message" name="entry.179987403" required></textarea>
 						<label>Your Message</label>
 					</div>
 					<button class="bubbly-button">Submit</button>
@@ -762,8 +777,6 @@
    	</div> <!-- /contact-info -->
 		
 	</section> <!-- /contact -->
-
-
    <!-- footer
    ================================================== -->
 
