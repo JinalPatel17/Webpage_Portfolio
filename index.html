@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en"> 
+	<!--<![endif]-->
 <head>
 
-   <!--- basic page needs
-   ================================================== -->
+   <!--- basic page needs-->
    <meta charset="utf-8">
 	<title>Jinal Patel</title>
 	<meta name="description" content="Web devolper and designer. Portfolio site all the work">  
 	<meta name="author" content="Jinal">
 
-   <!-- mobile specific metas
-   ================================================== -->
+   <!-- mobile specific metas-->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="viewport" content="width=device-width">
 	
- 	<!-- CSS
-   ================================================== -->
+ 	<!-- CSS-->
    <link rel="stylesheet" href="css/base.css">  
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/vendor.css">
@@ -33,17 +32,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@500&display=swap" rel="stylesheet">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
 
    <!-- script
    ================================================== -->   
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
-	<!--  this is for linkedin badge show off<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script> -->
 
-   <!-- favicons
-	================================================== -->
-	<!-- <link rel="icon" type="image/png" href="images.png"> -->
+   <!-- favicons-->
 	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -54,18 +53,18 @@
 <body id="top" onload="incrementVisitCount()">
 <script>
 function incrementVisitCount() {
-	let visitCount = localStorage.getItem('visitCount');
+	let VisitCountdowntmp = localStorage.getItem('VisitCountdowntmp');
   
-	if (visitCount) {
-	  visitCount = parseInt(visitCount);
-	  visitCount++;
+	if (VisitCountdowntmp) {
+	  VisitCountdowntmp = parseInt(VisitCountdowntmp);
+	  VisitCountdowntmp++;
 	} else {
-	  visitCount = 1;
+	  VisitCountdowntmp = 1;
 	}
   
-	localStorage.setItem('visitCount', visitCount);
+	localStorage.setItem('VisitCountdowntmp', VisitCountdowntmp);
   
-	document.getElementById('visitCount').textContent = `Number of visits: ${visitCount}`;
+	document.getElementById('VisitCountdowntmp').textContent = `Number of Webvisits untill now: ${VisitCountdowntmp}`;
   }
   </script>
 	<!-- header 
@@ -93,10 +92,8 @@ function incrementVisitCount() {
    	</div> <!-- /row --> 		
    </header> <!-- /header -->
 
-	<!-- intro section
-   ================================================== -->
+	<!-- intro section -->
    <section id="intro">   
-	
    	<div class="intro-overlay"></div>	
 
    	<div class="intro-content">
@@ -105,12 +102,13 @@ function incrementVisitCount() {
    			<div class="col-twelve">
 
 	   			<h5 id="intro_edition1">Hello,</h5>
-	   			<h1 id="intro_edition2">I'm Jinal</h1>
+				<br>
+	   			<h1 id="intro_edition2">I'm JINAL</h1>
+				<br>
 				<h5 id="intro_edition1">Welcome to my Portfolio Webpage</h5>
-
-	   			<p class="intro-position">
-	   				<!--<span>Front-end Developer</span>-->
-	   				<span><h2 class="ops">🚧 This Page is Under Construction 🚧</h1></span> 
+				<br>
+	   			<p class="intro-position"><span>Full-Stack Developer |</span> <span>Data Analyst |</span> <span>Cloud Engineer</span>
+	   				<!-- <span><h2 class="ops">🚧 This Page is Under Construction 🚧</h1></span>  -->
 	   			</p>
 
 	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
@@ -122,20 +120,15 @@ function incrementVisitCount() {
 
    	<ul class="intro-social">        
 		<li><a href="https://github.com/JinalPatel17" target="_blank"><i class="fa fa-github"></i></a></li>
-		<li><a href="https://www.linkedin.com/in/jinal-patel-22359715a/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+		<li><a href="https://www.linkedin.com/in/jinal-patel17/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 		<li><a href="https://steamcommunity.com/profiles/76561198412021539/" target="_blank"><i class="fa fa-steam"></i></a></li>
-      </ul> <!-- /intro-social --> 
+      </ul> <!-- /intro-social -->
    </section> <!-- /intro -->
-   <!-- <p id="visitCount">Loading visit count...</p> -->
-   <!-- -->
+   <p id="VisitCountdowntmp">Loading visit count...</p>
 
 
-   <!-- about section
-   ================================================== -->
-   <div id="">
+   <!-- about section-->
 	<video id="bg-video" autoplay loop muted>
-		<source src="../Webpage_Portfolio/vds/background_RE4_mp4_Frmt.mp4" type="video/mp4">
-		<source src="../Webpage_Portfolio/vds/Background_RE4_compressed.webm" type="video/webm">
 	</video>
    <section id="about">  
 	<div class="firefly"></div><div class="firefly"></div>
@@ -151,14 +144,17 @@ function incrementVisitCount() {
    	<div class="row section-intro">
    		<div class="col-twelve">
 
-   			<h5>About</h5>
+   			<h2>About</h2>
    			<h1 id="introduce_edition1">Let Me Introduce Myself</h1>
 
    			<div class="intro-info">
 
-   				<img src="images/Card1.png" alt="Profile Picture">
+   				<img src="images/ProfilePicture(90x90).png" alt="Profile Picture">
 
-   				<p class="lead">I'm 25. Self motivated, hardworking and self focus on keep improvising in every situation. Never run from problem. Solving every problem in desired creative way.   
+   				<p class="lead">I'm 25-year-old with a fierce work ethic 
+					and an unyielding devotion to self-improvement.  
+					My strategy is based on an unwavering pursuit of greatness, 
+					never backing down from challenges in favour to solve it.  
 				   </p>
    			</div>   			
 
@@ -176,25 +172,29 @@ function incrementVisitCount() {
    					<strong id="strong_edition1">Fullname:</strong>
    					<span>Jinalkumar Dhirubhai Patel</span>
    				</li>
+				<li>
+					<strong id="strong_edition1">Prefered Name:</strong>
+					<span>Jinal Patel</span>
+				</li>
    				<li>
    					<strong id="strong_edition1">Birth Date:</strong>
    					<span>October 29, 1998</span>
    				</li>
    				<li>
    					<strong id="strong_edition1">Job:</strong>
-   					<span>Freelancer, Frontend Developer</span>
+   					<span>Full-Stack Developer, Data Analyst, Cloud Engineer</span>
    				</li>
-   				<!--<li>
-   					<strong>Blogsite:</strong>
-   					<span>Site is here</span>
-   				</li>-->
    				<li>
    					<strong id="strong_edition1">Email:</strong>
-   					<span>jinal@patel.com</span>
+   					<span>jinalptl17@gmail.com</span>
    				</li>
 				<li>
 					<strong id="strong_edition1">Github:</strong>
 					<span>github.com/JinalPatel17</span>
+				</li>
+				<li>
+					<strong id="strong_edition1">linkedin:</strong>
+					<span>linkedin.com/in/jinal-patel17</span>
 				</li>
    			</ul> <!-- /info-list -->
 
@@ -203,8 +203,6 @@ function incrementVisitCount() {
    		<div class="col-six tab-full">
 
    			<h3 id="introduce_edition2">Skills</h3>
-   			<!-- <p>I am web devolper with various skills. Learn many programming languges.</p> -->
-
 				<ul class="skill-bars">
 				   <li>
 				   	<div class="progress percent90"><span>90%</span></div>
@@ -227,7 +225,7 @@ function incrementVisitCount() {
 				   	<strong id="strong_edition1">Node.js</strong>
 				   </li>
 				   <li>
-				   	<div class="progress percent70"><span>70%</span></div>
+				   	<div class="progress percent70"><span>85%</span></div>
 				   	<strong id="strong_edition1">react</strong>
 				   </li>
       
@@ -236,26 +234,49 @@ function incrementVisitCount() {
    		</div>
 
    	</div>
-	
-	
-   	<div class="row button-section">
-   		<div class="col-twelve">
-   			<!-- <a href="#contact" title="Hire Me" class="button stroke smoothscroll button button-primary	">Hire Me</a> -->
-   			<a href="./images/DownloadCVcontent/Jinal_Patel_Resume_.pdf" title="Download CV" class="button stroke smoothscroll button button-primary">Download My CV</a>
-   		</div>   		
-   	</div>
-</section> <!-- /process-->    
-</div>
+	   <!-- <div class="row button-section"> coming soon
+		   <div class="col-twelve">
+			   <a href="#contact" title="Hire Me" class="button stroke smoothscroll button button-primary	">Hire Me</a>
+			   <a href="./images/DownloadCVcontent/Jinal_Patel_Resume_.pdf" title="Download CV" class="button stroke smoothscroll button button-primary">Download My CV</a>
+			</div>   		
+		</div> -->
+	</section> <!-- /process-->    
+<div id="badges_1">
+	 <h1 id="resume_edition5">Tech Skills</h1>
+	 <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+	 <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+	 <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
+	 <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
+	 <img src="https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=azure-devops&logoColor=white" alt="Azure">
+	 <img src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white" alt="Cloudflare">
+	 <img src="https://img.shields.io/badge/Google%20Cloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white" alt="Google Cloud">
+	 <img src="https://img.shields.io/badge/angular.js-%23E23237.svg?style=for-the-badge&logo=angularjs&logoColor=white" alt="Angular.js">
+	 <img src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
+	 <img src="https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white" alt="NPM">
+	 <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="NodeJS">
+	 <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React">
+	 <img src="https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white" alt="Redux">
+	 <img src="https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D" alt="Vue.js">
+	 <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
+	 <img src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+	 <img src="https://img.shields.io/badge/Microsoft%20SQL%20Sever-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white" alt="Microsoft SQL Server">
+	 <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="Postgres">
+	 <img src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
+	 <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
+	 <img src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white" alt="PyTorch">
+	 <img src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn">
+	 <img src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white" alt="TensorFlow">
+	 <img src="https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white" alt="SciPy">
+	 <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman">
+ </div>
 
-
-   <!-- resume Section
-   ================================================== -->
-	<section id="resume" class="grey-section">
+<!-- resume Section-->
+	<section id="resume" class="backg-resume">
 
 		<div class="row section-intro">
    		<div class="col-twelve">
 
-   			<h5>Resume</h5>
+   			<h2>Resume</h2>
    			<h1 id="resume_edition2">More of my credentials,</h1>
    		</div>   		
    	</div> <!-- /section-intro--> 
@@ -268,7 +289,7 @@ function incrementVisitCount() {
 
    		</div> <!-- /resume-header -->
 
-   		<div class="col-twelve">
+   		<div class="col-twelve" id="bgFix">
 
    			<div class="timeline-wrap">
 
@@ -279,14 +300,19 @@ function incrementVisitCount() {
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Bachelor's Degree</h3>
-						<p>Computer Science and Engineering</p>
-	   					<p>August 2016 - August 2020</p>
+	   					<h3 id="fontFix">Computer Science and Engineering</h3>
+						<p id="resume_edition1">B.Tech Degree </p>
+	   					<p id="resume_edition1">August 2016 - August 2020</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>Parul University</h4>
-	   					<p id="resume_edition1">Experience the rich blend of diversity Parul University inhibits, in an atmosphere of world-class student talent, and top-notch lecturers and professors. With an enriching exposure to the international world through exchange programs all under one roof. </p>
+	   					<h3 id="fontFix">Parul University</h3>
+	   					<p id="resume_edition1">
+							I've gained a Bachelor degree and discovered a diverse range of experiences because Parul University 
+							offers in an environment with exceptional faculty, 
+							world-class student talent, and lecturers.
+							with comprehensive, all-under-one-roof exposure to the global community via exchange programs.							
+						</p>
 	   				</div>
 	   			</div> <!-- /timeline-block -->
 
@@ -297,14 +323,7 @@ function incrementVisitCount() {
    	</div> <!-- /resume-timeline -->
    	
    	<div class="row resume-timeline">
-
-   		<div class="col-twelve resume-header">
-
-   			<!-- <h2>Work Experince</h2> -->
-			
-   		</div> <!-- /resume-header -->
-
-   		<div class="col-twelve">
+   		<div class="col-twelve" id="bgFix" >
 
    			<div class="timeline-wrap">
 
@@ -315,13 +334,21 @@ function incrementVisitCount() {
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Web Developer</h3>
-	   					<p>March 2021 - March 2022</p>
+	   					<h3 id="fontFix">Full Stack Web Developer</h3>
+						<p id="resume_edition1">Certificate Course</p>
+	   					<p id="resume_edition1">March 2021 - March 2022</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>ZTM: Zero to Mastery (Udemy)</h4>
-	   					<p id="resume_edition1">Zero To Mastery(ZTM) is one of the greatest learning course on Online platform exclusive on Udemy. The course taught by Andrie Anogie, one of the profesional and very forward tutor from Canada. From beginner to getting hired to advancing your skills and having a successful, rewarding career.</p>
+	   					<h3 id="fontFix">ZTM: Zero to Mastery (Udemy)</h3>
+	   					<p id="resume_edition1">I've mastered the art of Full-Stack Development, 
+							from using HTML/CSS🎨 to create pixel-perfect websites to using JavaScript to create reliable apps. 
+							knowledgeable about cutting-edge technologies like Node.js, Redux, and React🖥💻. 
+							I'm your go-to developer for the extraordinary, 
+							whether you need help building scalable backends 
+							or developing exquisite user interfaces!💻
+							Zero To Mastery(ZTM) is one of the greatest learning course on Online platform exclusive on Udemy. 
+						</p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -329,7 +356,7 @@ function incrementVisitCount() {
 	   			</div> <!-- /timeline-block -->
 
    			</div> <!-- /timeline-wrap --> 
-			   <div class="col-twelve">
+			   <div class="col-twelve" id="bgFix">
 
 				<div class="timeline-wrap">
  
@@ -340,21 +367,25 @@ function incrementVisitCount() {
 						</div>
  
 						<div class="timeline-header">
-							<h3 id="resume_edition1">Post Graduation</h3>
-							<p>Artificial Intelligence and Data Analytics</p>
-							<p>August 2022 - April 2023</p>
+							<h3 id="fontFix">Artificial Intelligence and Data Analytics</h3>
+							<p id="resume_edition1">Post Graduation</p>
+							<p id="resume_edition1">August 2022 - April 2023</p>
 						</div>
  
 						<div class="timeline-content">
-							<h4>Saskatchewan Polytechnic</h4>
-							<p id="resume_edition1">As a polytechnic, the organization provides the depth of learning appropriate to employer and student need, including certificate, diploma and degree programs, and apprenticeship training. Saskatchewan Polytechnic engages in applied research, drawing on faculty expertise to support innovation by employers, and providing students the opportunity to develop critical thinking skills.</p>
+							<h3 id="fontFix">Saskatchewan Polytechnic</h3>
+							<p id="resume_edition1">Discover the exciting worlds of data analytics 📊 and artificial intelligence 🤖. 
+								I've used my strong background in these cutting-edge areas to use AI's ability 
+								to convert data into insights and workable solutions. 
+								Enter a world where decisions are made based on facts! 🌟
+							</p>
 						</div>
 					</div> <!-- /timeline-block -->
  
 				</div> <!-- /timeline-wrap -->   			
  
 			</div>
-			<div class="col-twelve">
+			<div class="col-twelve" id="bgFix">
 
 				<div class="timeline-wrap">
  
@@ -365,13 +396,48 @@ function incrementVisitCount() {
 						</div>
  
 						<div class="timeline-header">
-							<h3>Data Science</h3>
-							<p>January 2023 - May 2023</p>
+							<h3 id="fontFix">Data Science and Data Analytics</h3>
+							<p id="resume_edition1">Certificate Course</p>
+							<p id="resume_edition1">January 2023 - May 2023</p>
 						</div>
  
 						<div class="timeline-content">
-							<h4 id="">365 Careers (Udemy)</h4>
-							<p id="resume_edition1">Data Science Training: Mathematics, Statistics, Python, Advanced Statistics in Python, Machine & Deep Learning.</p>
+							<h3 id="fontFix">365 Careers (Udemy)</h3>
+							<p id="resume_edition1">Set off on an exciting adventure exploring 
+								the diverse field of data science. 
+								This course has taught me the fundamentals of mathematics 📚 
+								and statistics📊 as well as how to use Python🐍 to its full potential. 
+								I've also learnt about advanced statistical methods, data visualization📈 techniques, 
+								machine learning🤖, and deep learning🧠. </p>
+						</div>
+					</div> <!-- /timeline-block -->
+ 
+				</div> <!-- /timeline-wrap -->   			
+ 
+			</div>
+			<div class="col-twelve" id="bgFix">
+
+				<div class="timeline-wrap">
+ 
+					<div class="timeline-block">
+ 
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+ 
+						<div class="timeline-header">
+							<h3 id="fontFix">Cloud Computing and Blockchain</h3>
+							<p id="resume_edition1">Post Graduation</p>
+							<p id="resume_edition1">September 2023 - Present</p>
+						</div>
+ 
+						<div class="timeline-content">
+							<h3 id="fontFix">Saskatchewan Polytechnic</h3>
+							<p id="resume_edition1"> Unleashing an exciting adventure into 
+								the decentralized marvels of Blockchain technology⛓️ 
+								and the boundless possibilities of Cloud Computing☁️. 
+								I'm on a quest to foster innovation and usher in a decentralized future 
+								by utilizing blockchain technology and the power of the cloud.🚀</p>
 						</div>
 					</div> <!-- /timeline-block -->
  
@@ -385,10 +451,10 @@ function incrementVisitCount() {
 		
 	</section> <!-- /features -->
 
-	<!-- Portfolio Section
-   ==================================================  -->
-	<section id="portfolio">
-		<div class="row portfolio-content">
+	<!-- Portfolio Section-->
+	<section id="portfolio" class="bg-port">
+		<h2 class="header_mywrk">My Work</h2>
+	<div class="row portfolio-content">
 
    		<div class="col-twelve">
 
@@ -496,9 +562,22 @@ function incrementVisitCount() {
 	               </div>
 	        		</div> 
 					<!-- /folio-item    -->
-
-	             <!-- modal popups - begin
-	            ============================================================= -->
+					<div class="bgrid folio-item">
+						<div class="item-wrap">
+							<img src="images/portfolio/modals/GradientBG_jinalpatel17.github.io.jpeg" alt="Gradient Background">
+						   <a href="#modal-07" class="overlay">
+							  <div class="folio-item-table">
+								  <div class="folio-item-cell">
+									  <h3 class="folio-title">Gradient Background</h3>	     					    
+											  <span class="folio-types">
+												   Web Development
+											</span>		     		
+										 </div>	                      	
+							  </div>                    
+						   </a>
+						</div>
+						 </div> 
+	             <!-- modal popups - begin-->
 	            <div id="modal-01" class="popup-modal slider mfp-hide">	
 
 				     	<div class="media">
@@ -518,9 +597,8 @@ function incrementVisitCount() {
 			         </div>		      
 
 				   </div>  
-				   <!-- /modal-01 -->
-
-				   <div id="modal-02" class="popup-modal slider mfp-hide">	
+			
+				<div id="modal-02" class="popup-modal slider mfp-hide">	
 
 				     	<div class="media">
 				     		<img src="images/portfolio/modals/Gridpage_jinalpatel17.github.io.jpeg" alt="Grid-Webpage" />
@@ -541,7 +619,7 @@ function incrementVisitCount() {
 				   </div>  
 				   <!-- /modal-02  -->
 
-				   <div id="modal-03" class="popup-modal slider mfp-hide">	
+				<div id="modal-03" class="popup-modal slider mfp-hide">	
 
 				     	<div class="media">
 				     		<img src="images/portfolio/modals/LoginSignup_jinalpatel17.github.io.jpeg" alt="" />
@@ -562,7 +640,7 @@ function incrementVisitCount() {
 				   </div>  
 				   <!-- /modal-03 -->
 
-				   <div id="modal-04" class="popup-modal slider mfp-hide">	
+				<div id="modal-04" class="popup-modal slider mfp-hide">	
 
 				     	<div class="media">
 				     		<img src="images/portfolio/modals/Loading_Animation.gif" alt="Loading_Animation.gif" />
@@ -583,7 +661,7 @@ function incrementVisitCount() {
 				   </div> 
 				    <!-- /modal-04  -->
 
-				   <div id="modal-05" class="popup-modal slider mfp-hide">	
+				<div id="modal-05" class="popup-modal slider mfp-hide">	
 
 				     	<div class="media">
 				     		<img src="images/portfolio/modals/wavering.gif" alt="Wavering" />
@@ -604,7 +682,7 @@ function incrementVisitCount() {
 				   </div>  
 				   <!-- /modal-05  -->
 
-				   <div id="modal-06" class="popup-modal slider mfp-hide">	
+				<div id="modal-06" class="popup-modal slider mfp-hide">	
 
 				     	<div class="media">
 				     		<img src="./images/portfolio/modals/To_DoPage_jinalpatel17.github.io.jpeg" alt="Start start-up-of-the-year" />
@@ -623,11 +701,27 @@ function incrementVisitCount() {
 			         </div>		      
 
 				   </div>  
-				   <!-- /modal-06  -->
+				<div id="modal-07" class="popup-modal slider mfp-hide">	
 
+					<div class="media">
+						<img src="./images/portfolio/modals/GradientBG_jinalpatel17.github.io.jpeg" alt="Gradient Background" />
+					</div>      	
 
-				    <!-- modal popups - end
-	            ============================================================= -->
+				  <div class="description-box">
+					 <h4>Gradient Background</h4>		      
+					 <p>Basic programming for color Gradient generator and fun things to play with.</p>
+
+					 <div class="categories">Web Development</div>			               
+				  </div>
+
+				<div class="link-box">
+				   <a href="https://jinalpatel17.github.io/GradientBackground/">Details</a>
+					 <a href="#" class="popup-modal-dismiss">Close</a>
+				</div>		      
+
+			  </div>  
+
+			<!-- modal popups - end-->
 
 	         </div>  
 			 <!-- /portfolio-wrapper  -->
@@ -651,8 +745,7 @@ function incrementVisitCount() {
 		</div>
 	</section>   -->
 	<!-- /portfolio -->
-   <!-- contact
-   ================================================== -->	
+   <!-- contact-->	
    <section id="contact">
 		<div id='stars'></div>
 		<div id='stars2'></div>
@@ -660,10 +753,12 @@ function incrementVisitCount() {
 		<div class="row section-intro">
    		<div class="col-twelve">
 			
-   			<h5>Contact</h5>
+   			<h2>Contact</h2>
    			<h1>I'd Love To Hear From You.</h1>
 
-   			<p class="lead">Any suggestion or any adivce, really here to listen. In nut shell, most likely to improve. Also check out my blog site.</p>
+   			<p class="lead" id="lead2">Your insightful comments are really appreciated.
+				I truly value your recommendations, counsel, and understanding. I'm here to listen carefully and take into account your insightful comments.
+				</p>
 
    		</div> 
    	</div> <!-- /section-intro -->
@@ -672,7 +767,6 @@ function incrementVisitCount() {
    		<div class="col-twelve col_form">
 			<div class="container_jinx">
 				<form id="feedbackForm" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSfS4sMYPK6rZV82DfW-2wQafK6M-UgTUQ410HEgNVgZqn5PfQ/formResponse">
-					<!-- event.preventDefault(); -->
 					<div class="form-control">
 						<input type="text" id="name" name="entry.1141342697" required />
 						<label>Your name </label>
@@ -690,6 +784,14 @@ function incrementVisitCount() {
 						<label>Your Message</label>
 					</div>
 					<button class="bubbly-button">Submit</button>
+					<div id="submit-loader">
+                        <div class="text-loader">Sending...</div>                             
+       				      <div class="s-loader">
+								  	<div class="bounce1"></div>
+								  	<div class="bounce2"></div>
+								  	<div class="bounce3"></div>
+								</div>
+							</div>
 				</form>
 			</div>
             <!-- form the original -->
@@ -743,10 +845,10 @@ function incrementVisitCount() {
    				<i class="icon-pin"></i>
    			</div>
 			
-   			<h5>Contact me on Discord</h5>
-
-   			<p><a href="https://discordapp.com/users/502866986221568010" target="_blank">
-			Jinal | COD3X
+   			<h5>Currently located</h5>
+   			<p> <a href="https://www.google.com/maps/place/Regina,+SK/@50.4585942,-104.6354091,12z/data=!3m1!4b1!4m6!3m5!1s0x531c1e40fba53deb:0x354a3296b77b54b1!8m2!3d50.4452112!4d-104.6188943!16zL20vMHBtcGw?entry=ttu" 
+				target="_blank">
+				Regina, Saskatchewan
 			</a>
             </p>
 
@@ -760,7 +862,7 @@ function incrementVisitCount() {
 
    			<h5>Email Me At</h5>
 
-   			<p><a href="mailto: patel@jinal.com" class="mailtojump">patel@jinal.com</a><br>			     
+   			<p><a href="mailto:jinalptl17@gmail.com" class="mailtojump">jinalptl17@gmail.com</a><br>			     
 			   </p>
 
    		</div>
@@ -770,29 +872,29 @@ function incrementVisitCount() {
    			<div class="icon">
    				<i class="icon-phone"></i>
    			</div>
-   			<h5>Call Me At</h5>
-   			<p>	N A </p>
+   			<h5>Contact me on Discord</h5>
+   			<p><a href="https://discordapp.com/users/502866986221568010" target="_blank">
+				Jinal | COD3X</a></p>
+			
    		</div>
    		
    	</div> <!-- /contact-info -->
 		
 	</section> <!-- /contact -->
-   <!-- footer
-   ================================================== -->
-
+   <!-- footer-->
    <footer>
 	   <div class="row">
      	<div class="col">
 		 </div>
 		  <div class="col">
 		</div>
-		<!-- <br><h1 id="Font_codex"><a href="https://steamcommunity.com/profiles/76561198412021539/">The COD3X</a></h1> -->
 		  <div class="row">
 		  <div class="col-twelve tab-full">
 	      	<div class="copyright">
+				  	<span>Jinal Patel Copyright @ 2023</span> 
+					<span> Jinal Patel All rights reserved </span>	         	
 				  	<span>Design by <a href="https://github.com/JinalPatel17">Jinal Patel</a></span>
-		        	<span>© Copyright Jinal 2023.</span> 
-					<span>All third party factors include in here are licence free. </span>	         	
+					<span>Owned by Jinal Patel</span>
 		         </div>		                  
 	      	</div>
 		</div>
@@ -809,8 +911,7 @@ function incrementVisitCount() {
     	<div id="loader"></div>
    </div> 
 
-   <!-- Java Script
-   ================================================== --> 
+   <!-- Java Script --> 
    <script src="js/jquery-2.1.3.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>

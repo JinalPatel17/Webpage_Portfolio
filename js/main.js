@@ -114,9 +114,16 @@
 
 	});
 	// video editing
+	const bgVideo = document.getElementById('bg-video');
+	const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+   
+	if (isMobile) {
+	   bgVideo.setAttribute('src', '../Webpage_Portfolio/vds/Goku_webm_frmt.webm');
+	} else {
+	   bgVideo.setAttribute('src', '../Webpage_Portfolio/vds/Goku_mp4_frmt.mp4');
+	}
 	var video = document.getElementById('bg-video');
-	video.playbackRate = 4;
-
+	video.playbackRate = 1;
 
 	/*----------------------------------------------------*/
 	/*	Modal Popup
@@ -216,7 +223,7 @@
 
 
   	/*---------------------------------------------------- */
-	/*	contact form
+	/*	contact form For AJAX Coming soon
 	------------------------------------------------------ */
 
 	/* local validation */
@@ -315,24 +322,6 @@ const labels = document.querySelectorAll(".form-control label");
 		`<span style="transition-delay:${idx * 50}ms">${letter}</span>` )
 		.join("");
 });
-// now for website visit Counter
-// Function to increment the visit count
-// Function to increment the visit count
-// function incrementVisitCount() {
-// 	let visitCount = localStorage.getItem('visitCount');
-  
-// 	if (visitCount) {
-// 	  visitCount = parseInt(visitCount);
-// 	  visitCount++;
-// 	} else {
-// 	  visitCount = 1;
-// 	}
-  
-// 	localStorage.setItem('visitCount', visitCount);
-  
-// 	document.getElementById('visitCount').textContent = `Number of visits: ${visitCount}`;
-//   }
-
  	/*----------------------------------------------------- */
   	/* Back to top
    ------------------------------------------------------- */ 

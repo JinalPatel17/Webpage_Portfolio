@@ -125,10 +125,12 @@
      }
  }
  h2, .h02 {
-     font-size: 2.4rem;
-     line-height: 1.25;
-     font-family: 'Candara light', 'Times New Roman', Times, serif;
-     color: lightseagreen;
+     /* font-size: 2.4rem; */
+     /* line-height: 1.25; */
+     font-family: "poppins-bold", sans-serif;
+     font-size: 1.8rem;
+     text-transform: uppercase;
+     letter-spacing: .25rem;
  }
  h2.ops{
      font-size: 30px;
@@ -162,10 +164,18 @@
      font-family: 'Joan', serif;
      font-size: 2rem;
      line-height: 1.8;
-     color: #a5a5a5;
+     color: #F3EAEA;
+     background-color: #393e467d;
  }
+p.lead#lead2{
+  font-family: 'Joan', serif;
+     font-size: 2rem;
+     line-height: 1.8;
+     color: #F3EAEA;
+     background-color: transparent;
+}
  @media only screen and (max-width:768px) {
-     p.lead {
+     p.lead p.lead#lead2{
          font-size: 1.7rem;
      }
  }
@@ -662,7 +672,8 @@
     height: 100vh;
     overflow: hidden;
     margin: 0;
-}
+  }
+
 .col-twelve.col_form{
   display: flex;
   flex-direction: column;
@@ -672,7 +683,7 @@
   overflow: hidden;
 }
 .container_jinx{
-  /* background-color: #393e467d; */
+  background-color: #393e467d;
   padding: 20px 40px;
   /* border-radius: 5px; */
 
@@ -1133,7 +1144,7 @@ animation: bottomBubbles ease-in-out 0.75s forwards;
      left: 0;
      top: -3rem;
      font-family: "poppins-bold", sans-serif;
-     color: #a8a6a6;
+     color: #bdb76b;
      text-transform: uppercase;
      letter-spacing: .2rem;
      font-size: 1.5rem;
@@ -1203,6 +1214,9 @@ animation: bottomBubbles ease-in-out 0.75s forwards;
      color: #7d7d7d;
      
  }
+ section.backg_resume{
+  background: salmon;
+ }
  .section-intro {
      max-width: 700px;
      margin-left: auto;
@@ -1213,30 +1227,40 @@ animation: bottomBubbles ease-in-out 0.75s forwards;
  }
  .section-intro h1 {
      font-family: "poppins-semibold", serif;
+     margin-top: 1rem;
      font-size: 3.6rem;
      color: #313131;
      line-height: 1.25;
      margin-bottom: 1.2rem;
  }
- .section-intro h5 {
+ .section-intro h2 {
      color: #9B7000;
+     /* font-family: "poppins-semibold", serif; */
+     margin-top: 2rem;
      font-size: 1.6rem;
      line-height: 1.875;
      margin-bottom: 0.3rem;
      letter-spacing: .4rem;
+     text-shadow: 0.6px 0.6px 0 #000, -0.6px -0.6px 0 #000, 0.6px -0.6px 0 #000, -0.6px 0.6px 0 #000;
  }
  #intro_edition1{
   font-family: 'Bruno Ace SC', cursive;
  }
  #intro_edition2{
-  font-family: 'Joan', serif;
+  font-family: 'Cairo Play', sans-serif;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 0 #011b06, -1px -1px 0 #011b06, 1px -1px 0 #011b06, -1px 1px 0 #011b06;
+  letter-spacing: 3px;
+
  }
  #introduce_edition1{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #FFFFFF;
+  color: #F3EAEA;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
  }
- #introduce_edition2{
+ h3#introduce_edition2{
   color: #9B7000;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
  }
  /**
   * responsive:
@@ -1497,7 +1521,8 @@ animation: bottomBubbles ease-in-out 0.75s forwards;
   * ------------------------------------------------------------------- 
   */
  #intro {
-      background: #151515 url(../images/279A1523.JPG) no-repeat center bottom;
+   /*background: #4e4e4e url(../images/279A1523.JPG)  no-repeat center bottom; */
+      background: url(../images/279A1523_animation_.gif)  no-repeat center bottom;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       background-size: cover;
@@ -1562,20 +1587,24 @@ animation: bottomBubbles ease-in-out 0.75s forwards;
  .intro-content .intro-position span {
      display: inline-block;
  }
- .intro-content .intro-position span:nth-child(4)::after {
+ p span{
+  color: #bdb76b;
+  text-shadow: 0.6px 0.6px 0 #000, -0.6px -0.6px 0 #000, 0.6px -0.6px 0 #000, -0.6px 0.6px 0 #000;
+ }
+ .intro-content .intro-position span:nth-child::after {
      content: "|";
      text-align: center;
      display: inline-block;
      padding: 0 8px 0 14px;
      color: rgba(255, 255, 255, 0.3);
  }
- .intro-content .intro-position span:first-child::before {
+ /* .intro-content .intro-position span:first-child::before {
      content: "|";
      text-align: center;
      display: inline-block;
      padding: 0 14px 0 8px;
-     color: rgba(255, 255, 255, 0.3);
- }
+     color: rgba(255, 255, 255, 0.3); 
+ }*/
  .intro-content .button {
      color: #FFFFFF !important;
      border-color: rgba(255, 255, 255, 0.3);
@@ -1729,7 +1758,7 @@ animation: bottomBubbles ease-in-out 0.75s forwards;
  
  }
  #bg-video {
-     position:fixed;
+     position: fixed;
      top: 0;
      left: 0;
      width: 100%;
@@ -3324,6 +3353,8 @@ animation: bottomBubbles ease-in-out 0.75s forwards;
      text-align: left;
      max-width: 850px;
      margin-bottom: 3.6rem;
+     color: #F3EAEA;
+     background-color: #393e467d;
  }
  .about-content h3 {
      font-family: "poppins-bold", sans-serif;
@@ -3350,7 +3381,7 @@ animation: bottomBubbles ease-in-out 0.75s forwards;
  .about-content .info-list li span {
      display: block;
      font-family: "poppins-regular", sans-serif;
-     color: #888888;
+     color: #bdb76b;
      font-size: 1.5rem;
      line-height: 1;
  }
@@ -3372,9 +3403,22 @@ animation: bottomBubbles ease-in-out 0.75s forwards;
  }
  #resume_edition1{
   font-family: 'Joan', serif;
+  color: #bdb76b;
  }
- #resume_edition2{
+ h1#resume_edition2{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #F3EAEA;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+
+ }
+ h1#resume_edition5{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: #F3EAEA;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  font-size: xxx-large;
+  font-size: 7vh; /*Safari iOS supported versions*/
+  font-variant-caps: petite-caps;
  }
  /**
   * responsive:
@@ -3425,7 +3469,12 @@ animation: bottomBubbles ease-in-out 0.75s forwards;
          text-align: center;
      }
  }
- 
+ /* div#badges_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+} */
  /** 
   * ===================================================================
   * 12. resume - (_layout.scss)
@@ -3440,9 +3489,11 @@ animation: bottomBubbles ease-in-out 0.75s forwards;
  
  #resume .resume-header {
      text-align: center;
+     background-color: #393e467d;
  }
  #resume .resume-header h2 {
      color: #9B7000;
+     text-shadow: 0.6px 0.6px 0 #000, -0.6px -0.6px 0 #000, 0.6px -0.6px 0 #000, -0.6px 0.6px 0 #000;
  }
  
  #resume .resume-timeline {
@@ -3471,7 +3522,7 @@ animation: bottomBubbles ease-in-out 0.75s forwards;
      height: 4.8rem;
      width: 4.8rem;
      line-height: 4.8rem;
-     background: #313131;
+     background: #695B00;
      border-radius: 50%;
      text-align: center;
      color: #FFFFFF;
@@ -3495,7 +3546,7 @@ animation: bottomBubbles ease-in-out 0.75s forwards;
  #resume .timeline-header h3 {
      margin-bottom: 0;
  }
- #resume .timeline-header p {
+ #resume .timeline-header{
      font-family: "poppins-regular", sans-serif;
      font-size: 1.6rem;
      color: #888888;
@@ -3518,7 +3569,13 @@ animation: bottomBubbles ease-in-out 0.75s forwards;
      left: 0;
      bottom: 0;
  }
- 
+ div.col-twelve#bgFix{
+  background-color: #393e467d;
+ }
+ h3#fontFix{
+  color: #000000;
+  text-shadow: 0.30px 0.30px 0 #524E00, -0.30px -0.30px 0 #524E00, 0.30px -0.30px 0 #524E00, -0.30px 0.30px 0 #524E00;
+ }
  /**
   * responsive:
   * resume
@@ -3720,96 +3777,117 @@ animation: bottomBubbles ease-in-out 0.75s forwards;
  *
  */
  #portfolio {
-     /*background: #504e4e;*/
-     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-     overflow: hidden;
-     padding-top: 12rem;
-     padding-bottom: 12rem;
- }
- #portfolio .folio-item {
-     padding: 0;
-     position: relative;
-     overflow: hidden;
- }
- #portfolio .folio-item img {
-     vertical-align: middle;
-     -moz-transition: all 0.5s ease-in-out;
-     -o-transition: all 0.5s ease-in-out;
-     -webkit-transition: all 0.5s ease-in-out;
-     -ms-transition: all 0.5s ease-in-out;
-     transition: all 0.5s ease-in-out;
- }
- 
- #portfolio .overlay {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background: transparent;
-     -moz-transition: all 0.5s ease-in-out;
-     -o-transition: all 0.5s ease-in-out;
-     -webkit-transition: all 0.5s ease-in-out;
-     -ms-transition: all 0.5s ease-in-out;
-     transition: all 0.5s ease-in-out;
- }
- #portfolio +h1{
-     text-transform: uppercase;
-     font-family: "poppins-regular", sans-serif; 
-     font-size: 1.2rem;
-     letter-spacing: .1rem;
+   /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
+   background: linear-gradient(180deg,#151E29,#0D1118, #3c4b5e, #1e2229, #151E29, #0D1118);
+   background-size: 400% 400%;
+   animation: gradient 10s ease infinite;
+   overflow: hidden;
+   padding-top: 3rem;
+   padding-bottom: 12rem;
+   position: relative;
+
+  }
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
     }
-#portfolio .folio-item-table {
-     display: table;
-     width: 100%;
-     height: 100%;
- }
- #portfolio .folio-item-cell {
-     display: table-cell;
-     vertical-align: middle;
-     text-align: center;
-     -moz-transition: all 0.5s ease-in-out;
-     -o-transition: all 0.5s ease-in-out;
-     -webkit-transition: all 0.5s ease-in-out;
-     -ms-transition: all 0.5s ease-in-out;
-     transition: all 0.5s ease-in-out;
-     position: relative;
-     left: -100%;
- }
- 
- #portfolio .folio-title {
-     color: #FFFFFF;
-     font-size: 3.3rem;
-     padding: 0 3rem;
-     margin-bottom: 0;
- }
- #portfolio .folio-types {
-     margin: 0;
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+h2.header_mywrk{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9B7000;
+  text-shadow: 0.6px 0.6px 0 #000, -0.6px -0.6px 0 #000, 0.6px -0.6px 0 #000, -0.6px 0.6px 0 #000;
+}
+  #portfolio .folio-item {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  #portfolio .folio-item img {
+    vertical-align: middle;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  #portfolio .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  #portfolio +h1{
+    text-transform: uppercase;
+    font-family: "poppins-regular", sans-serif; 
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+  }
+  #portfolio .folio-item-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+  #portfolio .folio-item-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    left: -100%;
+  }
+  
+  #portfolio .folio-title {
+    color: #FFFFFF;
+    font-size: 3.3rem;
+    padding: 0 3rem;
+    margin-bottom: 0;
+  }
+  #portfolio .folio-types {
+    margin: 0;
      padding: 0;
      text-transform: uppercase;
      font-family: "poppins-regular", sans-serif;
      font-size: 1.2rem;
      letter-spacing: .1rem;
      color: rgba(255, 255, 255, 0.6);
- }
- #portfolio .folio-item:hover .overlay {
-     background: rgba(0, 0, 0, 0.8);
- }
- #portfolio .folio-item:hover .folio-item-cell {
-     left: 0;
- }
- #portfolio .folio-item:hover img {
-     -webkit-transform: scale(1.05);
-     -ms-transform: scale(1.05);
-     transform: scale(1.05);
- }
- 
- /**
-  * responsive:
-  * portfolio
-  * ------------------------------------------------------------------- 
-  */
- @media only screen and (max-width:1024px) {
+    }
+    #portfolio .folio-item:hover .overlay {
+      background: rgba(0, 0, 0, 0.8);
+    }
+    #portfolio .folio-item:hover .folio-item-cell {
+      left: 0;
+    }
+    #portfolio .folio-item:hover img {
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+    /**
+    * responsive:
+    * portfolio
+    * ------------------------------------------------------------------- 
+    */
+    @media only screen and (max-width:1024px) {
      #portfolio .folio-title {
          font-size: 3.1rem;
      }
@@ -4189,22 +4267,6 @@ animation: bottomBubbles ease-in-out 0.75s forwards;
      /*star property*/
      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
      overflow: hidden;
-     /*background: linear-gradient(90deg, #ee6952, #8924e7, #61f7d1, #ebd835);
-       background-size: 400% 400%;
-       animation: gradient 15s ease-in-out infinite;
-     padding-top: 12rem;
-     padding-bottom: 7.2rem;
- }
- @keyframes gradient {
-     0% {
-         background-position: 0% 50%;
-     }
-     50% {
-         background-position: 100% 50%;
-     }
-     100% {
-         background-position: 0% 50%;
-     }*/
  }
  /* Star background*/
  #stars {
