@@ -3475,6 +3475,9 @@ animation: bottomBubbles ease-in-out 0.75s forwards;
   align-items: center;
   gap: 10px;
 } */
+div#badges_1{
+  background-color: #393e467d;
+}
  /** 
   * ===================================================================
   * 12. resume - (_layout.scss)
@@ -3777,27 +3780,15 @@ animation: bottomBubbles ease-in-out 0.75s forwards;
  *
  */
  #portfolio {
-   /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
-   background: linear-gradient(180deg,#151E29,#0D1118, #3c4b5e, #1e2229, #151E29, #0D1118);
-   background-size: 400% 400%;
-   animation: gradient 10s ease infinite;
+   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
    overflow: hidden;
    padding-top: 3rem;
    padding-bottom: 12rem;
    position: relative;
-
   }
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
+.portfolio-content{
+ background-color: #393e467d;
+  }
 h2.header_mywrk{
   display: flex;
   justify-content: center;
