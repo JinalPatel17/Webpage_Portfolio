@@ -11,7 +11,7 @@
 
 ## 1) Introduction
 
-![404:Belive me this is me](./ReadmeFiles/avatarpic_.png)
+![404:Belive me this is me](./ReadmeFiles/avatarpic.png)
 
 Hello This is Jinal, 
 This is a prototype of my profile webpage, which includes my CV. Employers or anyone in need of my services can access my work profile, view my past projects, and see what I'm currently working on.
