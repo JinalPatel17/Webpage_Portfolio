@@ -11,7 +11,7 @@
 
 ## 1) Introduction
 
-![404:Belive me this is me](./ReadmeFiles/Avtarpic.jpg)
+![404:Belive me this is me](./ReadmeFiles/avatarpic_.png)
 
 Hello This is Jinal, 
 This is a prototype of my profile webpage, which includes my CV. Employers or anyone in need of my services can access my work profile, view my past projects, and see what I'm currently working on.
@@ -81,7 +81,7 @@ This is a color palette used for this site.
 
 ## 4) Usage
  This project is intended for viewing and contributing purposes only. 
- 
+
  >Unauthorized use of the content for personal or commercial purposes is prohibited. 
 
  Contributors are welcome to enhance the project, but they may not use the content for their own personal use. 
