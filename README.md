@@ -1,5 +1,5 @@
 # WebPage_Prototype
-![404: Sorry it's not you, It's my mistake](Webpage_snippet_intro_62611815.gif)
+![404: Sorry it's not you, It's my mistake](./ReadmeFiles/Webpage_snippet_intro_62611815.gif)
 
 ## Table of Contents
 1. Introduction
@@ -11,7 +11,7 @@
 
 ## 1) Introduction
 
-![404:Belive me this is me](Avtarpic.jpg)
+![404:Belive me this is me](./ReadmeFiles/Avtarpic.jpg)
 
 Hello This is Jinal, 
 This is a prototype of my profile webpage, which includes my CV. Employers or anyone in need of my services can access my work profile, view my past projects, and see what I'm currently working on.
@@ -81,9 +81,12 @@ This is a color palette used for this site.
 
 ## 4) Usage
  This project is intended for viewing and contributing purposes only. 
+ 
  >Unauthorized use of the content for personal or commercial purposes is prohibited. 
+
  Contributors are welcome to enhance the project, but they may not use the content for their own personal use. 
- >>For more details, please see the license of this project.
+
+ >For more details, please see the license of this project.
 
 ## 5) Contributing
 Contributions are welcome! Please follow these steps to contribute:
@@ -94,15 +97,15 @@ Contributions are welcome! Please follow these steps to contribute:
 
     Step 2: Create a new branch:
 
-            ``` git checkout -b feature-branch ```
+            git checkout -b feature-branch
 
     Step 3: Make your changes and commit:
             
-            ```git commit -m "Add some feature ```
+            git commit -m "Add some feature
     
     Step 4: Push to branch:
 
-            ``` git push origin feature-branch ```
+            git push origin feature-branch
     
     Step 5: Open a pull request:
     
