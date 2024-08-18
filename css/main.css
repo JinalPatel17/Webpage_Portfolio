@@ -3330,6 +3330,15 @@ animation: bottomBubbles ease-in-out 0.75s forwards;
  #about .section-intro {
      margin-bottom: 3rem;
  }
+ #avatarpic{
+  background-color: #393e467d;
+    img {
+    height: 23rem;
+    width: 23rem;
+    border-radius: 18%;
+    margin: .9rem;
+    }
+}
  
  .intro-info {
      margin-top: 4.2rem;
