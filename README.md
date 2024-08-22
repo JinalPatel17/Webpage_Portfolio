@@ -1,4 +1,4 @@
-# WebPage_Prototype
+# WebPage_Portfolio
 ![404: Sorry it's not you, It's my mistake](./ReadmeFiles/Webpage_snippet_intro_62611815.gif)
 
 ## Table of Contents
@@ -77,16 +77,16 @@ This is a color palette used for this site.
 
 
 
-## This is color palette generated from [Paletton](http://paletton.com/#uid=21w0u0kuiiUvNtru4nlwudexs7O) by Paletton © 2002-2014
+### This is color palette generated from [Paletton](http://paletton.com/#uid=21w0u0kuiiUvNtru4nlwudexs7O) by Paletton © 2002-2014
 
 ## 4) Usage
  This project is intended for viewing and contributing purposes only. 
 
- >Unauthorized use of the content for personal or commercial purposes is prohibited. 
+ ## - Unauthorized use of the content for personal or commercial purposes is prohibited. 
 
- Contributors are welcome to enhance the project, but they may not use the content for their own personal use. 
+ ## - Contributors are welcome to enhance the project, but they may not use the content for their own personal use. 
 
- >For more details, please see the license of this project.
+ ### For more details, please see the license of this project.
 
 ## 5) Contributing
 Contributions are welcome! Please follow these steps to contribute:

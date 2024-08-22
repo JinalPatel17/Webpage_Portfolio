@@ -299,12 +299,19 @@ document.getElementById("feedbackForm").addEventListener("submit", function(even
 		  $('#message-warning').hide();
 		  $('#contactForm').fadeOut();
 		  $('#message-success').fadeIn();
+		  setTimeout(() => {
+			$('#message-warning').fadeOut();
+		}, 3000); 
 		} else {
 		  // There was an error
 		  response.text().then(msg => {
 			$('#message-warning').html(msg);
 			$('#message-warning').fadeIn();
 		  });
+		  // Fade out the warning message after 3 seconds
+		  setTimeout(() => {
+			$('#message-warning').fadeOut();
+		}, 3000);
 		}
 	  })
 	  .catch(error => {
@@ -313,6 +320,10 @@ document.getElementById("feedbackForm").addEventListener("submit", function(even
 		$('#message-warning').html("Something went wrong. Please try again.");
 		$('#message-warning').fadeIn();
 	  });
+	  // Fade out the warning message after 3 seconds
+	  setTimeout(() => {
+        $('#message-warning').fadeOut();
+    }, 3000);
   });
 // the following part is for form control
 const labels = document.querySelectorAll(".form-control label");
