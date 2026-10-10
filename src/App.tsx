@@ -42,7 +42,7 @@ function Socials({ className = '' }: { className?: string }) {
 function Nav() {
   const [open, setOpen] = useState(false)
   return <header className="fixed top-0 z-[600] flex w-full justify-between p-4">
-   <a href="#top" aria-label="Back to top" className="rounded bg-black p-2"><img src="Public/Icon/android-chrome-192x192.png" alt="JP" className="size-8" /></a>
+   <a href="#top" aria-label="Back to top" className="rounded bg-black p-2"><img src="Icon/android-chrome-192x192.png" alt="JP" className="size-8" /></a>
     <button aria-label="Menu" aria-expanded={open} onClick={() => setOpen(!open)} className={`burger z-[700] rounded bg-black px-3 py-4 ${open ? 'open' : ''}`}><span /><span /><span /></button>
     <nav className={`menu fixed inset-0 z-[650] flex flex-col items-center justify-center gap-6 bg-black/95 text-4xl uppercase tracking-widest transition-opacity ${open ? 'open opacity-100' : 'pointer-events-none opacity-0'}`}>
       {links.map((l, i) => <a key={l} href={`#${l}`} style={{ transitionDelay: open ? i * 80 + 'ms' : '0ms' }} onClick={() => setOpen(false)} className="text-white hover:text-gold-hi">{l}</a>)}
@@ -53,8 +53,8 @@ function Nav() {
 function BgVideo({ name, className = '' }: { name: string; className?: string }) {
   const r = useRef<HTMLVideoElement>(null)
   useEffect(() => { if (still()) r.current?.pause() }, [])
-  return <video ref={r} autoPlay loop muted playsInline preload="metadata" poster={`Public/vds/${name}.jpg`} className={className}>
-    <source src={`Public/vds/${name}.webm`} type="video/webm" /><source src={`Public/vds/${name}.mp4`} type="video/mp4" /></video>
+  return <video ref={r} autoPlay loop muted playsInline preload="metadata" poster={`vds/${name}.jpg`} className={className}>
+    <source src={`vds/${name}.webm`} type="video/webm" /><source src={`vds/${name}.mp4`} type="video/mp4" /></video>
 }
 
 function Fireflies() {
