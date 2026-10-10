@@ -70,5 +70,5 @@ Feel free to connect, collaborate, or reach out regarding projects and opportuni
 - Email: mailto:Jinalptl17@gmail.com
 
 ## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
+Copyright © 2026 Jinal. All rights reserved.
+This repository is public for viewing and reference only. No part of it may be copied, modified, or redistributed without written permission.
