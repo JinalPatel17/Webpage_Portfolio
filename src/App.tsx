@@ -68,8 +68,10 @@ function Contact() {
   const [state, setState] = useState<'idle' | 'sending' | 'ok'>('idle')
   const layers = useMemo(() => [[1, 700, '50s'], [2, 200, '100s'], [3, 100, '150s']].map(([w, n, t]) => ({ '--s': shadows(n as number), '--t': t, width: w + 'px', height: w + 'px' }) as CSSProperties), [])
   async function submit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault(); setState('sending')
-    const fd = new FormData(e.currentTarget)
+    e.preventDefault();
+    const form = e.currentTarget
+    setState('sending')
+    const fd = new FormData(form)
     try {
       if (!KEY) throw new Error('no key')
       fd.append('access_key', KEY)
@@ -81,7 +83,8 @@ function Contact() {
       g.append('entry.1104091493', String(fd.get('subject'))); g.append('entry.179987403', String(fd.get('message')))
       await fetch(GFORM, { method: 'POST', mode: 'no-cors', body: g }).catch(() => {})
     }
-    e.currentTarget.reset(); setState('ok')
+    form.reset()
+    setState('ok')
   }
   const field = (name: string, label: string, area = false) => <div className="fc">
     {area ? <textarea name={name} rows={4} required /> : <input name={name} type={name === 'email' ? 'email' : 'text'} required />}
